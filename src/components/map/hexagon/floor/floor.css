@@ -1,0 +1,72 @@
+  .color-fill, .color-fill * {      
+    opacity: 1;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition:
+      fill 1s ease-in-out 0s,
+      fill-opacity 1s ease-in-out 0s,
+      top 3s ease-in-out 0s,
+      left 3s ease-in-out 0s,
+      transform 3s ease-in-out 0s;
+  }
+  
+  .color-fill .hex {
+    cursor: pointer;
+    fill-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 1;
+  }
+  .color-fill .selectedHex {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #00ff00 !important;
+  }
+  .color-fill .neighbourHex {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #0000ff !important;
+  }
+  .color-fill .parentHex {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #00ffff !important;
+  }
+  .color-fill .childHex {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #ff00ff !important;
+  }
+  
+  .color-fill .hexObj {
+    cursor: pointer;
+    fill-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 1;
+  }
+  .color-fill .selectedHexObj {
+    cursor: pointer;
+    fill-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #ff0000;
+  }
+
+  .stickOut {
+    transition: all 1s ease-in-out 0s, top 1s ease-in-out 0s, left 1s ease-in-out 0s, points 1s ease-in-out 0s;
+}
+
+.hexFade-enter-active, .hexFade-leave-active {
+  transition: opacity 3s ease-in-out 1s;
+}
+
+.hexFade-enter, .hexFade-leave-to {
+  opacity: 0;
+}

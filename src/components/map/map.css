@@ -1,0 +1,15 @@
+.transformed {
+    /* -webkit-transform: perspective(600px) rotateX(60deg);
+    -moz-transform: perspective(600px) rotateX(60deg);
+    -ms-transform: perspective(600px) rotateX(60deg);
+    -o-transform: perspective(600px) rotateX(60deg); */
+    transform:  perspective(600px) rotateX(60deg);
+}
+
+.transformTransition {
+    pointer-events: none;
+    position: relative;
+    transition: transform 3s ease-in-out 0s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}

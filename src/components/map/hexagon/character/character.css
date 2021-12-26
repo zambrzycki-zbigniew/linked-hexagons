@@ -1,0 +1,35 @@
+.figureFade-enter-active, .figureFade-leave-active {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  backface-visibility: hidden;
+  overflow: visible !important;
+  transition: opacity 1s ease-in-out 3s;
+}
+
+.figureFade-enter, .figureFade-leave-to {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  backface-visibility: hidden;
+  overflow: visible !important;
+  opacity: 0;
+}
+
+.character, .character * {      
+  opacity: 1;
+  transition:
+    top 3s ease-in-out 0s,
+    left 3s ease-in-out 0s,
+    transform 3s ease-in-out 0s;
+}
+
+.movingCharacter, .movingCharacter * {
+  transition:
+    top 3s ease-in-out 0s,
+    left 3s ease-in-out 0s,
+    transform .5s ease-in-out 0s;
+} 
+.parent3d {      
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  overflow: visible !important;
+}

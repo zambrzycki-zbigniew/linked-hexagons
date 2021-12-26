@@ -1,0 +1,59 @@
+ 
+  .parent3d {      
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    overflow: visible !important;
+  }
+
+  #color-fill, #color-fill * {
+    transition: fill 1s ease-in-out 0s, fill-opacity 1s ease-in-out 0s, top 3s ease-in-out 0s, left 3s ease-in-out 0s;
+  }
+  
+  #color-fill .hex {
+    cursor: pointer;
+    fill-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 1;
+  }
+  #color-fill .selectedHex {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #00ff00 !important;
+  }
+  #color-fill .neighbourHex {
+    cursor: pointer;
+    fill-opacity: 0.6;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #0000ff !important;
+  }
+  
+  #color-fill .hexObj {
+    cursor: pointer;
+    fill-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 1;
+  }
+  #color-fill .selectedHexObj {
+    cursor: pointer;
+    fill-opacity: 0.4;
+    stroke: #000;
+    stroke-width: 1;
+    fill: #ff0000;
+  }
+
+  .stickOut {
+    transition: transform 1s ease-in-out 0s, top 1s ease-in-out 0s, left 1s ease-in-out 0s;
+}
+
+.hex-fade-enter-active {
+  transition: all 1s ease;
+}
+.hex-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.hex-fade-enter, .hex-fade-leave-to {
+  opacity: 0;
+}
